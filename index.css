@@ -40,34 +40,43 @@ body {
     animation: earth 15s linear infinite;
 }
 
-@keyframes mars {
-    to {
-        transform: rotate(360);
-    }
+.raceta {
+    width: 500px;
+    position: absolute;
+    top: 500px;
+    animation: man 20s linear infinite;
 }
 
-@keyframes earth {
-    to {
-        transform: rotate(360deg);
-    }
-}
 
-@keyframes man {
-    10% {
-        transform: translateX(100px);
+
+    @keyframes mars {
+        to {
+            transform: rotate(360);
+        }
     }
 
-    35% {
-        transform: translateY(50px)
+    @keyframes earth {
+        to {
+            transform: rotate(360deg);
+        }
     }
 
-    50% {
-        transform: translateX(280px) width: 100px;
+    @keyframes man {
+        10% {
+            transform: translateX(100px);
+        }
+
+        35% {
+            transform: translateY(50px)
+        }
+
+        50% {
+            transform: translateX(280px) width: 100px;
+
+        }
+
+        75% {
+            transform: transateY(500px)
+        }
 
     }
-
-    75% {
-        transform: transateY(500px)
-    }
-
-}
